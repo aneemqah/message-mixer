@@ -63,12 +63,6 @@ const reverseCipher = (sentence) => {
   return words.join(' ');
 };
 
-module.exports = {
-  caesarCipher,
-  symbolCipher,
-  reverseCipher,
-};
-
 // User Input / Output Logic
 
 const encryptionMethod = getEncryptionMethod();
