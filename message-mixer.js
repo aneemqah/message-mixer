@@ -1,13 +1,9 @@
-// Import the functions from encryptors.js here.
+// Import the functions from encryptors.js - destructure object
 const {
   caesarCipher,
   symbolCipher,
   reverseCipher,
 } = require('./encryptors.js');
-
-// Encryption Functions
-
-// Declare and export the functions here.
 
 // User Input / Output Logic
 
