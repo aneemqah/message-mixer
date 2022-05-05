@@ -1,6 +1,13 @@
-const encodeMessage = (str) => {};
+const encodeMessage = (str) => {
+  // Encryptor functions used here
+  // caesarCipher() requires an amount (a number between 0 and 26)
+  return reverseCipher(symbolCipher(caesarCipher(str, 6)));
+};
 
-const decodeMessage = (str) => {};
+const decodeMessage = (str) => {
+  // Take an encoded message and work the original message by reversing (-6)the encoding process.
+  return caesarCipher(symbolCipher(reverseCipher(str)), -6);
+};
 
 // User input / output.
 
